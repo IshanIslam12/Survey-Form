@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form-style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Form</h1>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>`
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+          <br>
+        <div class="form-group">
+          <label for = "major">Major (optional)</label>
+          <input type = "text" id="major" name="major">
+        </div>
+        </div>
+        <div class = "form-group">
+          <label for = "grade-level">Grade Level</label>
+          <select id = "grade-level" name = "grade-level" required>
+            <option value = "">Select</option>
+            <option value = "Freshman">Freshman</option>
+            <option value="sophmore">Sophmore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value = "grad">Graduate</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Which programming languages do you know?</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="html" name="languages" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="languages" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="languages" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="other" name="languages" value="other">
+            <label for="other">Other</label>
+            <input type="checkbox" id="none" name="languages" value="none">
+            <label for="none">None</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="experience">Years of programming experience:</label>
+          <input type="number" id="experience" name="experience" min="0" required>
+        </div>
+        <div class="form-group">
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
